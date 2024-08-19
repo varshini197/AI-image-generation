@@ -1,0 +1,336 @@
+.header
+{
+    width:100%;
+    height:100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url('images/header-image.png');
+    background-size: cover;
+    background-position: center;
+    padding: 100px;
+    position:relative;
+
+}
+.nav
+{
+    position: fixed;
+    width:100%;
+    height:80px;
+    top:0;
+    left:0;
+    right:0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px;
+}
+.netflixlogo
+{
+    width:120px;
+}
+.signin1
+{
+   display: flex;
+   align-items: center;
+   width:200px;
+   justify-content: space-between;
+}
+.english
+{
+    border:1px solid white;
+    text-align: center;
+    border-radius: 3px;
+   outline: 0;
+   
+    color:white;
+    background-color: transparent;
+    padding: 8px;;
+}
+.english img{
+    width:10px;
+}
+.signin
+{
+
+    border-color:none;
+    text-align: center;
+    border-radius: 3px;
+   outline: none;
+    color:white;
+    background-color: red;
+    padding: 10px 16px 10px 16px;
+    font-weight: 700;
+}
+.button
+{
+    outline: none;
+    border: none;;
+}
+.content
+{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    margin-top: 20px;
+   text-align: center;
+}
+.content h1
+{
+    font-size: 60px;
+    line-height: 70px;
+    width:650px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+.content h3{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-bottom: 20px;
+    margin-top: 12px;
+    font-weight:200;
+}
+.content p{
+    padding-bottom: 14px;
+    font-size: 12px;
+    font-weight: 700px;
+}
+.email
+{
+    height:40px;
+    border-bottom-left-radius: 4px;
+     border-top-left-radius: 4px;
+    background-color: white;
+    outline: 0;
+    border: none;
+    width:330px;
+    margin-right: 0px;
+    
+}
+.email::placeholder
+{
+    font-size: 12px;
+    padding-left: 10px;
+    color: gray;
+    font-weight: 600;
+}
+.getstarted
+{
+    height: 40px;
+    margin-left: 0px;
+    width:130px;
+    text-align: center;
+    background-color: red;
+    color:white;
+    outline: 0;
+    border: none;
+    font-size: 16px;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius:4px ;
+}
+.input
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* .box1
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+   
+}
+
+.pic img{
+    width:300px;
+}
+.text h2{
+    margin-bottom: 12px;
+}
+.text p{
+     width:300px;
+    font-size: 12px;
+    line-height: 20px;
+    font-weight: 500;
+}
+.text{
+    margin-right: 90px;
+} */
+ .features
+ {
+    padding:50px 12%;
+    font-size:22px;
+  
+
+ }
+ .box1
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    padding:5px 0;
+   
+   
+}
+.text
+{
+    flex-basis: 50%;
+    margin-bottom: 20px;
+ 
+}
+.pic
+{
+    flex-basis: 50%;
+    margin-bottom: 20px;;
+}
+.pic img
+{
+    display: block;
+    margin: auto;
+    width:90%;
+    
+}
+.text h2{
+    margin-bottom: 12px;
+}
+.text p{
+    line-height: 30px;
+    font-weight: 200;
+}
+.faq
+{
+    padding:10px 12%;
+    text-align:center;
+    font-size:18px;
+}
+ul
+{
+    list-style-type: none;
+   
+   
+}
+.questions
+{
+   
+    margin: 60px auto;
+    width: 100%;
+    max-width:750px;
+}
+.questions li{
+    list-style: none;
+    width: 100%;
+    padding:5px;
+}
+.questions li label{
+    display:flex;
+    background-color: blueviolet;
+    align-items: center;
+    padding: 20px;
+    font-size: 18px;
+    font-weight: 500;
+    background-color: #303030;
+    cursor: pointer;
+    position:relative;
+    margin-bottom: 2px;
+}
+label::after{
+    content:'+';
+    position: absolute;
+    right: 20px;
+    font-size: 35px;
+    transition: transform 1s;
+}
+input[type="radio"]
+{
+    display: none;
+}
+.questions .answer
+{
+    background-color:#303030;
+    text-align: left;
+    padding: 0 20px;
+    max-height: 0;
+    overflow: hidden;
+    margin-top: 6px;
+    margin-bottom: 6px;
+    transition: max-height 0.5s,padding 0.5s;
+}
+.questions input[type="radio"]:checked + label + .answer
+{
+    max-height: 600px;
+    padding: 30px 20px;
+}
+
+.questions input[type="radio"]:checked + label::after
+{
+    transform: rotate(135deg);
+}
+.note
+{
+    
+    position: absolute;
+    left: 489px;
+    font-size: 10px;
+    color:rgb(219, 229, 18);
+    padding-top: 5px;
+}
+.footer
+{
+    display:flex;
+    flex-direction: column;
+    border-top:6px solid gray;
+    margin-top:30px;
+    width:100%;
+}
+.title
+{
+   margin-left: 210px;
+   margin-top: 100px;
+   color:#b3aaaa
+}
+.footer h2{
+    font-size: 15px;
+   font-weight: 200;
+  
+}
+.links
+{
+   
+    display: flex;
+    padding: 20px;
+    margin-top: 20px;
+    justify-content: center;
+    
+}
+.b1
+{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+ 
+    flex-basis: 18%;
+    justify-content: center;
+    align-items: left;
+    margin-right: 12px;
+    
+}
+.links a{
+    text-decoration: none;
+    font-size: 14px;
+    color:#b3aaaa;
+    padding: 10px;;
+}
+.last
+{
+    display:flex;
+    flex-direction: column;
+    margin-left: 210px;
+    justify-content: left;
+    color:#b3aaaa;
+}
+.last button{
+    margin-bottom: 33px;
+   
+}
