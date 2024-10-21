@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <img class="logo" src="logo.png">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="generate.html">Generate</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+    <div class="contact-container">
+        <h1>Contact Us</h1>
+        <p>If you have any questions or feedback, feel free to reach out to us.</p>
+        
+        <form id="contactForm">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" placeholder="Enter your name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" placeholder="Enter your email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="message">Message:</label>
+                <textarea id="message" rows="5" placeholder="Type your message" required></textarea>
+            </div>
+
+            <button type="submit">Send Message</button>
+        </form>
+    </div>
+
+    <div class="faq">
+        <h2>
+            Frequently Asked Questions
+        </h2>
+        <ul class="accordion">
+            <li>
+                <input type="radio" name="accordion" id="first">
+                <label for="first">What is Netflix??</label>
+                <div class="content">
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                         Esse at similique nihil delectus blanditiis expedita 
+                         exercitationem quae eos 
+                        consequatur doloremque reiciendis natus modi
+                         tempora sunt nisi, illo beatae numquam magnam.</p>
+                </div>
+            </li>
+    
+            <li>
+                <input type="radio" name="accordion" id="second">
+                <label for="second">How much does netflix cost?</label>
+                <div class="content">
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                         Esse at similique nihil delectus blanditiis expedita 
+                         exercitationem quae eos 
+                        consequatur doloremque reiciendis natus modi
+                         tempora sunt nisi, illo beatae numquam magnam.</p>
+                </div>
+            </li>
+            <li>
+                <input type="radio" name="accordion" id="third">
+                <label for="third">Where can i watch?</label>
+                <div class="content">
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                         Esse at similique nihil delectus blanditiis expedita 
+                         exercitationem quae eos 
+                        consequatur doloremque reiciendis natus modi
+                         tempora sunt nisi, illo beatae numquam magnam.</p>
+                </div>
+    
+            </li>
+            <li>
+                <input type="radio" name="accordion" id="four">
+                <label for="four">How do i cancel?</label>
+                <div class="content">
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                         Esse at similique nihil delectus blanditiis expedita 
+                         exercitationem quae eos 
+                        consequatur doloremque reiciendis natus modi
+                         tempora sunt nisi, illo beatae numquam magnam.</p>
+                </div>
+            </li>
+            <li>
+                <input type="radio" name="accordion" id="five">
+                <label for="five">What can i watch on Netflix?</label>
+                <div class="content">
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                         Esse at similique nihil delectus blanditiis expedita 
+                         exercitationem quae eos 
+                        consequatur doloremque reiciendis natus modi
+                         tempora sunt nisi, illo beatae numquam magnam.</p>
+                </div>
+            </li>
+            <li>
+                <input type="radio" name="accordion" id="six">
+                <label for="six">Is Netflix good for kids?</label>
+                <div class="content">
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                         Esse at similique nihil delectus blanditiis expedita 
+                         exercitationem quae eos 
+                        consequatur doloremque reiciendis natus modi
+                         tempora sunt nisi, illo beatae numquam magnam.</p>
+                </div>
+            </li>
+        </ul>
+        
+        
+    
+    </div>
+    
+
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert("Thank you for your message!");
+        });
+    </script>
+</body>
+</html>

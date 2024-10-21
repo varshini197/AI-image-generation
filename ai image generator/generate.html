@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generated Page</title>
+    <link rel="stylesheet" href="color.css">
+</head>
+<body>
+    <nav class="navbar">
+        <img class="logo" src="logo.png">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="generate.html">Generate</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+    <h1>Enter Image URL</h1>
+    <form id="imageForm">
+        <label for="imageUrl">Image URL:</label>
+        <input type="text" id="imageUrl" placeholder="Paste image URL here" required>
+        <button type="submit">Submit</button>
+    </form>
+
+    <script>
+        document.getElementById('imageForm').addEventListener('submit', function(e) {
+            e.preventDefault(); // Prevent page refresh
+            
+            const imageUrl = document.getElementById('imageUrl').value;
+
+            // Validate the image URL
+            if (imageUrl) {
+                // Retrieve existing images from localStorage, or create an empty array if none exist
+                let storedImages = JSON.parse(localStorage.getItem('imageUrls')) || [];
+
+                // Add the new image URL to the array
+                storedImages.push(imageUrl);
+
+                // Store the updated image array back in localStorage
+                localStorage.setItem('imageUrls', JSON.stringify(storedImages));
+
+                alert("Image URL added to the gallery!");
+
+                // Clear the input field
+                document.getElementById('imageUrl').value = '';
+            } else {
+                alert("Please enter a valid image URL.");
+            }
+        });
+    </script>
+</body>
+</html>

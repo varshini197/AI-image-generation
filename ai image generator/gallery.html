@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery Page</title>
+    <link rel="stylesheet" href="color.css">
+</head>
+<body>
+    <nav class="navbar">
+        <img class="logo" src="logo.png">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="generate.html">Generate</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+    <h1>Image Gallery</h1>
+    <div id="gallery"></div>
+
+    <script>
+        // Function to display images in the gallery
+        function displayImages() {
+            // Retrieve the image URLs from localStorage
+            const storedImages = JSON.parse(localStorage.getItem('imageUrls')) || [];
+
+            // Get the gallery div
+            const galleryDiv = document.getElementById('gallery');
+            galleryDiv.innerHTML = ''; // Clear any existing content
+
+            if (storedImages.length === 0) {
+                galleryDiv.innerText = "No images in the gallery.";
+                return;
+            }
+
+            // Loop through the stored images and display each one
+            storedImages.forEach((url) => {
+                const img = document.createElement('img');
+                img.src = url;
+                img.alt = "Gallery Image";
+                img.style.maxWidth = "200px";
+                img.style.height = "auto";
+                img.style.margin = "10px";
+
+                // Handle error if the image URL is invalid
+                img.onerror = function() {
+                    img.remove(); // Remove invalid image from gallery
+                };
+
+                galleryDiv.appendChild(img);
+            });
+        }
+
+        // Call the function to display images when the page loads
+        window.onload = displayImages;
+    </script>
+</body>
+</html>
