@@ -16,6 +16,14 @@ body, html {
 .about-section-contact {
     display: flex;
     justify-content: center;
+<<<<<<< HEAD
+    align-items: center;
+    height: 70vh;
+    background-color: #000;
+    padding: 20px;
+    
+}
+=======
     align-items: flex-start; /* Aligns the content at the top */
     padding: 50px 20px;
     height: calc(100% - 80px); /* Ensures the footer is considered in the layout */
@@ -75,3 +83,4 @@ body, html {
         padding: 15px;
     }
 }
+>>>>>>> 610696959b3ca131a529739ce0104d9694aea613

@@ -4,16 +4,51 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Gallery Page</title>
+
 <!-- <link rel="stylesheet" href="color.css"> -->
+
+
+<!-- <link rel="stylesheet" href="color.css"> -->
+<link rel="stylesheet" href="header.css">
+<style>
+#mytext
+{
+    padding-left: 400px;
+    line-height: 30px;
+    width: 900px;
+    font-weight: 700;
+    padding-top: 30px;
+}
+    body{
+        background-color: black;
+        color:white;
+    }
+
+    #heading
+    {
+        text-align: center;
+        padding-left: 20px;
+    }
+    #gallery
+    {
+       
+        padding-left: 60px;
+        padding-top: 40px;
+      
+    }
+</style>
+
 
 <link rel="stylesheet" href="general.css">
 <link rel="stylesheet" href="gallery.css">
+
 </head>
 <body>
    
 
 <div class="nav">
-<img class="logo" src="logo.png">
+<!-- <img class="logo" src="logo.png"> -->
+<p>Quantum Canvas</p>
 <ul>
 <li><a href="index.html">Home</a></li>
 <li><a href="generate.html">Generate</a></li>
@@ -26,7 +61,14 @@
 
 </div>
 
-<h1>Image Gallery</h1>
+
+<h1 id="heading">Image Gallery</h1>
+<br>
+<h3>    View your generated images here</h3>
+<br>
+<br>
+
+
 <div id="gallery"></div>
 
 <script>
