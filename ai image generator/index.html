@@ -65,7 +65,62 @@
             display: block;
             margin-top: 20px;
             transition: border-radius 0.3s ease; /* Smooth transition */
+
         }
+
+        .shape-option {
+            width: 50px;
+            height: 50px;
+            margin: 10px;
+            display: inline-block;
+            cursor: pointer;
+            border: 2px solid #e50914;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+        
+        .rectangle {
+            width: 80px;
+        }
+        
+        .circle {
+            border-radius: 50%;
+        }
+        
+        .rounded {
+            border-radius: 10px;
+        }
+        
+        .oval {
+            width: 80px;
+            height: 50px;
+            border-radius: 50%;
+        }
+        
+        .shape-option:hover {
+            background-color: #e50914;
+            transform: scale(1.1);
+        }
+        
+        .rectangle:hover {
+            background-color: #1db954;
+        }
+        
+        .circle:hover {
+            background-color: #f39c12;
+        }
+        
+        .rounded:hover {
+            background-color: #3498db;
+        }
+        
+        .square:hover {
+            background-color: #8e44ad;
+        }
+        
+        .oval:hover {
+            background-color: #e74c3c;
+        }
+        
     </style>
 </head>
 <body>
@@ -236,3 +291,6 @@
             imageElement.style.borderRadius = '15px'; // Rounded corners
         } else if (selectedShape === 'square') {
             imageElement.style.borderRadius = '0'; //
+        }
+    }
+        </script>
