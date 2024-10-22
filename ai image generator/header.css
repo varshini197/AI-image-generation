@@ -10,7 +10,7 @@ position:relative;
 
 }
 
-/* Navigation Bar Styling */
+
 .nav {
 display: flex;
 justify-content: space-between;
@@ -270,11 +270,14 @@ padding-top: 5px;
 }
 .footer
 {
+  
+    padding: 30px;
 display:flex;
 flex-direction: column;
 border-top:6px solid gray;
 margin-top:30px;
 width:100%;
+margin-bottom: 30px;
 }
 .title
 {
@@ -313,6 +316,7 @@ text-decoration: none;
 font-size: 14px;
 color:#b3aaaa;
 padding: 10px;;
+font-weight: bolder;
 }
 .last
 {

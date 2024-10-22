@@ -9,11 +9,11 @@
 body
 {
     background-color: black;
-    color:#fff;
+
     
 }
 .links a:hover
 {
-  color:dodgerblue;
+  color:rgb(239, 47, 9);
  
 } 

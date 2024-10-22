@@ -5,24 +5,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Generated Page</title>
     <link rel="stylesheet" href="color.css">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="generate.css">
 </head>
 <body>
-    <nav class="navbar">
+   
+    </nav> 
+    <div class="nav">
         <img class="logo" src="logo.png">
         <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="generate.html">Generate</a></li>
-            <li><a href="gallery.html">Gallery</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="contact.html">Contact Us</a></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="generate.html">Generate</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
         </ul>
-    </nav>
+        
+        <button class="signin">Sign In</button>
+        
+        </div>
+
+     
+        <div class="generate">
+
+           
     <h1>Enter Image URL</h1>
+
+   
+    <div class="slide">
+    <img class="gimg" src="feature5.png"/>
+  <p class="welcome">At [Your Application Name], we believe in the power of creativity and visual storytelling. This gallery is a space for you to share and showcase your favorite images. To add an image to the gallery, simply paste the URL of the image in the input field provided, and hit submit.
+
+    Your uploaded images will be stored in our gallery for everyone to enjoy, so let your creativity shine! Whether it's art, photography, or memorable moments, we can't wait to see what you share.
+    
+    Feel free to explore the existing images, get inspired, and join our community of image lovers. Happy sharing!</p>
+</div>
+    <img src="">
     <form id="imageForm">
+
         <label for="imageUrl">Image URL:</label>
         <input type="text" id="imageUrl" placeholder="Paste image URL here" required>
         <button type="submit">Submit</button>
-    </form>
+    </form> 
+
+</div>
 
     <script>
         document.getElementById('imageForm').addEventListener('submit', function(e) {
