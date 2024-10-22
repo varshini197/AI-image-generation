@@ -13,15 +13,17 @@
         /* Add this CSS for shape selection */
         .shape-selection {
             margin: 20px 0;
+            padding-bottom: 20px;
         }
         
         .shape-option {
             display: inline-block;
             width: 50px;
             height: 50px;
-            border: 2px solid #000;
+            border: 2px solid #f7f2f2;
             margin-right: 10px;
             cursor: pointer;
+            position: relative;
         }
 
         .rectangle {
@@ -35,6 +37,25 @@
 
         .rounded {
             border-radius: 15px;
+        }
+
+        .square {
+            width: 50px;
+            height: 50px;
+        }
+
+        .oval {
+            border-radius: 25px;
+            width: 100px;
+            height: 50px;
+        }
+
+        .trapezoid {
+            width: 100px;
+            height: 0;
+            border-left: 50px solid transparent;
+            border-right: 50px solid transparent;
+            border-bottom: 30px solid #000;
         }
 
         /* Main image styles */
@@ -71,9 +92,13 @@
         <input type="text" id="input" placeholder="Enter image description">
         <div class="shape-selection">
             <h4>Select Image Shape:</h4>
-            <div class="shape-option rectangle" onclick="setShape('rectangle')"></div>
-            <div class="shape-option circle" onclick="setShape('circle')"></div>
-            <div class="shape-option rounded" onclick="setShape('rounded')"></div>
+            <br/>
+            <div class="shape-option rectangle" onclick="setShape('rectangle')" title="Rectangle"></div>
+            <div class="shape-option circle" onclick="setShape('circle')" title="Circle"></div>
+            <div class="shape-option rounded" onclick="setShape('rounded')" title="Rounded"></div>
+            <div class="shape-option square" onclick="setShape('square')" title="Square"></div>
+            <div class="shape-option oval" onclick="setShape('oval')" title="Oval"></div>
+            <!-- <div class="shape-option trapezoid" onclick="setShape('trapezoid')" title="Trapezoid"></div> -->
         </div>
         <button id="btn">Generate Image</button>
         <img id="image" class="mainimage" src="" alt="">
@@ -209,17 +234,5 @@
             imageElement.style.borderRadius = '50%'; // Circle shape
         } else if (selectedShape === 'rounded') {
             imageElement.style.borderRadius = '15px'; // Rounded corners
-        }
-    }
-
-    document.getElementById('btn').onclick = function() {
-        const imageInput = document.getElementById('input').value;
-        const imageElement = document.getElementById('image');
-        // For demonstration purposes, we'll just set a static image URL
-        // Replace with your image generation logic
-        imageElement.src = 'https://via.placeholder.com/300'; // Replace with generated image URL
-    };
-</script>
-
-</body>
-</html>
+        } else if (selectedShape === 'square') {
+            imageElement.style.borderRadius = '0'; //
