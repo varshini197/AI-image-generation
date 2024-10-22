@@ -1,42 +1,198 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://a.pub.network/deepai-org/cls.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
-    <title>Image</title>
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://a.pub.network/deepai-org/cls.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
+<title>Image</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="header.css">
+<link rel="stylesheet" href="general.css">
 </head>
 <body>
-    <div class="header">
-        
-        
 
-        <nav class="navbar">
-            <img class="logo" src="logo.png">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="generate.html">Generate</a></li>
-                <li><a href="gallery.html">Gallery</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact Us</a></li>
-            </ul>
-        </nav>
-    
-    
-    </div> 
-    
-    <div class="content">
-        <h1>AI Image Generator</h1>
-        <h2>Create Unlimited Images Instantly!!</h2>
-        <h4>Design Anywhere. Modify Anytime.</h4>
+<div class="header">
+<div class="nav">
+<img class="logo" src="logo.png">
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="generate.html">Generate</a></li>
+<li><a href="gallery.html">Gallery</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="contact.html">Contact Us</a></li>
+</ul>
+
+<button class="signin">Sign In</button>
+
+</div>
+
+
+<div class="content">
+
+<h1>Generate unlimited AI images, art, and more.</h1>
+<h3>Create anywhere. No design skills needed.</h3>
+<p>Ready to create? Enter your email to start generating AI-powered images or resume your previous projects.</p>
+
+
+<input type="text" id="input">
+<button id="btn">Generate Image</button>
+<img id="image" class="mainimage" src="" alt="">
+
+</div>
+</div>
+<div class="features">
+    <div class="box1">
+      <div class="text">
+        <h2>Generate stunning AI images on any device.</h2>
+        <p>Create on desktop, mobile, tablet, and more. Use your AI-powered image generator from any device with ease.</p>
+      </div>
+      <div class="pic">
+        <img src="images/feature-1.png" />
+      </div>
     </div>
-    
-    <input type="text" id="input">
-    <button id="btn">Generate Image</button>
-    <img id="image" src="" alt="">
-    <script src="script.js"></script>
-    
+  
+    <div class="box1">
+      <div class="pic">
+        <img src="images/feature-2.png" />
+      </div>
+      <div class="text">
+        <h2>Instant art creation with AI tools.</h2>
+        <p>From illustrations to photorealistic images, generate visuals effortlessly with AI-powered features.</p>
+      </div>
+    </div>
+  
+    <div class="box1">
+      <div class="text">
+        <h2>Customize your creations in real time.</h2>
+        <p>Adjust styles, themes, and details on the go. Fine-tune your AI-generated images to match your vision.</p>
+      </div>
+      <div class="pic">
+        <img src="images/feature-3.png" />
+      </div>
+    </div>
+  
+    <div class="box1">
+      <div class="pic">
+        <img src="images/feature-4.png" />
+      </div>
+      <div class="text">
+        <h2>Share and download your AI-generated images.</h2>
+        <p>Easily share or download your creations to use in projects, presentations, or social media.</p>
+      </div>
+    </div>
+  </div>
+  
+
+
+
+<div class="faq">
+    <h2 style="font-weight: 500;font-size: 40px;">Frequently Asked Questions</h2>
+    <ul class="questions">
+      <li>
+        <input type="radio" name="questions" id="first" />
+        <label for="first">
+          What is an AI image generator?
+        </label>
+        <div class="answer">
+          <p>An AI image generator uses artificial intelligence to create unique images based on user input. You can create anything from art to photorealistic images without needing any design skills.</p>
+        </div>
+      </li>
+  
+      <li>
+        <input type="radio" name="questions" id="second" />
+        <label for="second">
+          How does it work?
+        </label>
+        <div class="answer">
+          <p>You provide a description or prompt, and the AI processes it to generate an image. You can also customize styles, colors, and other features to create exactly what you need.</p>
+        </div>
+      </li>
+  
+      <li>
+        <input type="radio" name="questions" id="third" />
+        <label for="third">
+          Can I use AI-generated images commercially?
+        </label>
+        <div class="answer">
+          <p>Yes, depending on the platform's terms and conditions. Make sure to review the usage rights for each image you create to confirm commercial use is allowed.</p>
+        </div>
+      </li>
+  
+      <li>
+        <input type="radio" name="questions" id="fourth" />
+        <label for="fourth">
+          How do I get started with the AI image generator?
+        </label>
+        <div class="answer">
+          <p>Simply create an account and start by entering a description for your desired image. You can generate an image in seconds and tweak it as needed.</p>
+        </div>
+      </li>
+  
+      <li>
+        <input type="radio" name="questions" id="fifth" />
+        <label for="fifth">
+          What devices can I use to generate AI images?
+        </label>
+        <div class="answer">
+          <p>Our AI image generator works on all major devices, including desktops, tablets, and smartphones. You can create images from anywhere with an internet connection.</p>
+        </div>
+      </li>
+    </ul>
+  
+    <p style="margin-bottom:15px;">Ready to create? Enter your email to start generating or continue where you left off.</p>
+    <form class="input">
+      <input class="email" type="email" placeholder="Email address" />
+      <button class="getstarted" type="submit">Get started</button>
+    </form>
+    <small class="note">Email is required</small>
+  </div>
+  
+
+<div class="footer">
+<div class="title"> <h2>Questions? Call 444-555-888-111</h2></div>
+<div class="links">
+<div class="b1">
+<a href="#">FAQ</a>
+<a href="#">Investor Relations</a>
+<a href="#">Privacy</a>
+<a href="#">Speed Test</a>
+</div>
+
+
+
+<div class="b1">
+<a href="#">Help Center</a>
+<a href="#">Jobs</a>
+<a href="#">Cookies Preferences</a>
+<a href="#">Legal Notices</a>
+</div>
+
+<div class="b1">
+<a href="#">Account</a>
+<a href="#">Ways to watch</a>
+<a href="#">Corporate Information</a>
+<a href="#">Only on netflix</a>
+</div>
+
+<div class="b1">
+<a href="#">Media Center</a>
+<a href="#">Terms of Use</a>
+<a href="#">Contact Us</a>
+
+</div>
+
+</div>
+</div>
+
+
+<div class="copyrighttext">
+Quantum Canvas
+</div>
+</div>
+
+</div>
+<script src="script.js"></script>
+
 </body>
 </html>
