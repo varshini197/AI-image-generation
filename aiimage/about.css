@@ -1,0 +1,86 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    font-family: 'Arial', sans-serif;
+    background-color: #141414; /* Netflix-style dark background */
+    color: #fff; /* White text */
+}
+
+/* About Section */
+.about-section-contact {
+    display: flex;
+    justify-content: center;
+<<<<<<< HEAD
+    align-items: center;
+    height: 70vh;
+    background-color: #000;
+    padding: 20px;
+    
+}
+=======
+    align-items: flex-start; /* Aligns the content at the top */
+    padding: 50px 20px;
+    height: calc(100% - 80px); /* Ensures the footer is considered in the layout */
+}
+
+.content-contact {
+    max-width: 800px;
+    text-align: center;
+    padding: 20px;
+    background-color: #181818; /* Dark background for content */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+}
+
+.content-contact h1 {
+    font-size: 36px;
+    color: #e50914; /* Netflix Red for headings */
+    margin-bottom: 20px;
+}
+
+.content-contact p {
+    margin-bottom: 15px;
+    color: #ccc;
+    line-height: 1.6;
+}
+
+/* Footer */
+.copyright {
+    background-color: #e50914; /* Netflix Red for footer background */
+    text-align: center;
+    padding: 20px 0;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.copyright p {
+    color: #fff;
+    font-size: 14px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .about-section-contact {
+        padding: 30px 10px;
+    }
+
+    .content-contact h1 {
+        font-size: 28px;
+    }
+    
+    .content-contact p {
+        font-size: 16px;
+    }
+
+    .copyright {
+        padding: 15px;
+    }
+}
+>>>>>>> 610696959b3ca131a529739ce0104d9694aea613

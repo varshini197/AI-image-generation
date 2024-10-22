@@ -1,0 +1,112 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #141414;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+
+.header{
+    background-color: #222;
+    text-align: center;   
+    background-position: center;
+    padding:15px;
+    position: relative;
+}
+
+
+.navbar {
+    background-color: #222;
+    padding: 10px 0;
+    display: flex; 
+    justify-content: flex-end;
+}
+
+
+nav{
+    
+    align-items: center;
+    display:flex ;
+    padding :10px 0;
+    
+}
+
+.logo{
+    width:50px;
+    cursor:pointer;
+    padding:20px;
+
+}
+.navbar ul {
+    list-style-type: none;
+    padding: 50;
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+}
+
+.navbar li {
+    margin: 0 15px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+.navbar a:hover {
+    color: #e50914; 
+}
+
+.content {
+    margin-top: 100px;
+    text-align: center;
+}
+
+input{
+    max-width: 350px;
+    width: 90%;
+    height: 30px;
+    border-radius: 20px;
+    background: #fffb;
+    padding: 5px;
+    font-size: 1.2rem;
+    color: white;
+    text-align: center;
+}
+input[type="text"] {
+    width: 300px;
+    padding: 10px;
+    margin: 20px auto;
+    display: block;
+    border: none;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #e50914; 
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    padding: 20px 50px;
+    align-items: center;
+}
+
+button:hover {
+    background-color: #f40612; 
+}
+
+img {
+    width:90%;
+    max-width: 350px;
+    margin-top: 30px;
+    border-radius: 10px;
+}
+
+

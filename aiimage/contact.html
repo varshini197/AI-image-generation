@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Netflix Theme</title>
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="general.css">
+
+</head>
+<body>
+    <header>
+        <div class="nav">
+            <P> Quantum Canvas</P>
+            <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="generate.html">Generate</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+            
+            <button class="signin">Sign In</button>
+            
+            </div>
+    </header>
+    
+
+    <!-- Contact Us Section -->
+    <div class="contact-container">
+        <h1>Contact Us</h1>
+        <p>If you have any questions or feedback, feel free to reach out to us.</p>
+
+        <form id="contactForm">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" placeholder="Enter your name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" placeholder="Enter your email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="message">Message:</label>
+                <textarea id="message" rows="5" placeholder="Type your message" required></textarea>
+            </div>
+
+            <button type="submit" class="send-btn">Send Message</button>
+        </form>
+    </div>
+
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert("Thank you for your message!");
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generated Page</title>
+    <link rel="stylesheet" href="color.css">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="generate.css">
+</head>
+<body>
+   
+    </nav> 
+    <div class="nav">
+        <p>Quantum Canvas</p>
+        <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="generate.html">Generate</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+        
+        <button class="signin">Sign In</button>
+        
+        </div>
+
+     
+        <div class="generate">
+
+           
+    <h1>Enter Image URL</h1>
+
+   
+    <div class="slide">
+    <img class="gimg" src="feature5.png"/>
+  <p class="welcome"> we believe in the power of creativity and visual storytelling. This gallery is a space for you to share and showcase your favorite images. To add an image to the gallery, simply paste the URL of the image in the input field provided, and hit submit.
+
+    Your uploaded images will be stored in our gallery for everyone to enjoy, so let your creativity shine! Whether it's art, photography, or memorable moments, we can't wait to see what you share.
+    
+    Feel free to explore the existing images.</p>
+</div>
+    <img src="">
+    <form id="imageForm">
+
+        <label for="imageUrl">Image URL:</label>
+        <br/>
+        <input type="text" id="imageUrl" placeholder="Paste image URL here" required>
+        <br/>
+        <button type="submit">Submit</button>
+        <p>Add all your creation in Gallery</p>
+    </form> 
+
+    <div id="boxx" class="features">
+        <div class="box1">
+          <div class="text">
+            <h2>Generate stunning AI images on any device.</h2>
+            <p>Create on desktop, mobile, tablet, and more. Use your AI-powered image generator from any device with ease.</p>
+          </div>
+          <div class="pic">
+            <img class="myclass" src="feature7.png" />
+          </div>
+        </div>
+      
+        <div class="box1">
+          <div class="pic">
+            <img class="myclass" src="feature5.png" />
+          </div>
+          <div class="text">
+            <h2>Instant art creation with AI tools.</h2>
+            <p>From illustrations to photorealistic images, generate visuals effortlessly with AI-powered features.</p>
+          </div>
+        </div>
+      
+        <div class="box1">
+          <div class="text">
+            <h2>Customize your creations in real time.</h2>
+            <p>Adjust styles, themes, and details on the go. Fine-tune your AI-generated images to match your vision.</p>
+          </div>
+          <div class="pic">
+            <img class="myclass" src="feature6.png" />
+          </div>
+        </div>
+      
+        <div class="box1">
+          <div class="pic">
+            <img class="myclass" src="image.png" />
+          </div>
+          <div class="text">
+            <h2>Share and download your AI-generated images.</h2>
+            <p>Easily share or download your creations to use in projects, presentations, or social media.</p>
+          </div>
+        </div>
+      </div>
+    
+
+</div>
+
+    <script>
+        document.getElementById('imageForm').addEventListener('submit', function(e) {
+            e.preventDefault(); // Prevent page refresh
+            
+            const imageUrl = document.getElementById('imageUrl').value;
+
+            // Validate the image URL
+            if (imageUrl) {
+                // Retrieve existing images from localStorage, or create an empty array if none exist
+                let storedImages = JSON.parse(localStorage.getItem('imageUrls')) || [];
+
+                // Add the new image URL to the array
+                storedImages.push(imageUrl);
+
+                // Store the updated image array back in localStorage
+                localStorage.setItem('imageUrls', JSON.stringify(storedImages));
+
+                alert("Image URL added to the gallery!");
+
+                // Clear the input field
+                document.getElementById('imageUrl').value = '';
+            } else {
+                alert("Please enter a valid image URL.");
+            }
+        });
+    </script>
+</body>
+</html>

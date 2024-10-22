@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gallery Page</title>
+
+<!-- <link rel="stylesheet" href="color.css"> -->
+
+
+<!-- <link rel="stylesheet" href="color.css"> -->
+<link rel="stylesheet" href="header.css">
+<style>
+#mytext
+{
+    padding-left: 400px;
+    line-height: 30px;
+    width: 900px;
+    font-weight: 700;
+    padding-top: 30px;
+}
+    body{
+        background-color: black;
+        color:white;
+    }
+
+    #heading
+    {
+        text-align: center;
+        padding-left: 20px;
+    }
+    #gallery
+    {
+       
+        padding-left: 60px;
+        padding-top: 40px;
+      
+    }
+</style>
+
+
+<link rel="stylesheet" href="general.css">
+<link rel="stylesheet" href="gallery.css">
+
+</head>
+<body>
+   
+
+<div class="nav">
+<!-- <img class="logo" src="logo.png"> -->
+<p>Quantum Canvas</p>
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="generate.html">Generate</a></li>
+<li><a href="gallery.html">Gallery</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="contact.html">Contact Us</a></li>
+</ul>
+<button class="signin">Sign In</button>
+
+
+</div>
+
+
+<h1 id="heading">Image Gallery</h1>
+<br>
+<h3>    View your generated images here</h3>
+<br>
+<br>
+
+
+<div id="gallery"></div>
+
+<script>
+// Function to display images in the gallery
+function displayImages() {
+// Retrieve the image URLs from localStorage
+const storedImages = JSON.parse(localStorage.getItem('imageUrls')) || [];
+
+// Get the gallery div
+const galleryDiv = document.getElementById('gallery');
+galleryDiv.innerHTML = ''; // Clear any existing content
+
+if (storedImages.length === 0) {
+galleryDiv.innerText = "No images in the gallery.";
+return;
+}
+
+// Loop through the stored images and display each one
+storedImages.forEach((url) => {
+const img = document.createElement('img');
+img.src = url;
+img.alt = "Gallery Image";
+img.style.maxWidth = "200px";
+img.style.height = "auto";
+img.style.margin = "10px";
+
+// Handle error if the image URL is invalid
+img.onerror = function() {
+img.remove(); // Remove invalid image from gallery
+};
+
+galleryDiv.appendChild(img);
+});
+}
+
+// Call the function to display images when the page loads
+window.onload = displayImages;
+</script>
+</body>
+</html>
