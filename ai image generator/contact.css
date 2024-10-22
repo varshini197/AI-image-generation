@@ -43,7 +43,7 @@ ul {
 .nav ul li a {
     font-size: 16px;
     font-weight: bold;
-    text-transform: uppercase;
+    
 }
 
 .nav .signin {
@@ -124,7 +124,7 @@ textarea {
     color: white;
     font-size: 16px;
     font-weight: bold;
-    text-transform: uppercase;
+    
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s;
