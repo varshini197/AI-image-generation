@@ -65,8 +65,10 @@
             display: block;
             margin-top: 20px;
             transition: border-radius 0.3s ease; /* Smooth transition */
+
         }
 
+<<<<<<< HEAD
         /* Modal styles */
         .modal {
             display: none; /* Hidden by default */
@@ -124,6 +126,61 @@
             border-radius: 23px;
         }
      
+=======
+        .shape-option {
+            width: 50px;
+            height: 50px;
+            margin: 10px;
+            display: inline-block;
+            cursor: pointer;
+            border: 2px solid #e50914;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+        
+        .rectangle {
+            width: 80px;
+        }
+        
+        .circle {
+            border-radius: 50%;
+        }
+        
+        .rounded {
+            border-radius: 10px;
+        }
+        
+        .oval {
+            width: 80px;
+            height: 50px;
+            border-radius: 50%;
+        }
+        
+        .shape-option:hover {
+            background-color: #e50914;
+            transform: scale(1.1);
+        }
+        
+        .rectangle:hover {
+            background-color: #1db954;
+        }
+        
+        .circle:hover {
+            background-color: #f39c12;
+        }
+        
+        .rounded:hover {
+            background-color: #3498db;
+        }
+        
+        .square:hover {
+            background-color: #8e44ad;
+        }
+        
+        .oval:hover {
+            background-color: #e74c3c;
+        }
+        
+>>>>>>> 610696959b3ca131a529739ce0104d9694aea613
     </style>
 </head>
 <body>
@@ -319,6 +376,7 @@
         } else if (selectedShape === 'rounded') {
             imageElement.style.borderRadius = '15px'; // Rounded corners
         } else if (selectedShape === 'square') {
+<<<<<<< HEAD
             imageElement.style.borderRadius = '0'; 
         } else if (selectedShape === 'oval') {
             imageElement.style.borderRadius = '25px'; 
@@ -382,3 +440,9 @@
 </script>
 </body>
 </html>
+=======
+            imageElement.style.borderRadius = '0'; //
+        }
+    }
+        </script>
+>>>>>>> 610696959b3ca131a529739ce0104d9694aea613

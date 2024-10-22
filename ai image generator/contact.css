@@ -1,158 +1,152 @@
-/* Netflix Theme Styling */
 
-/* General page layout */
 body {
     margin: 0;
-    font-family: 'Arial', sans-serif;
-    background-color: #141414;
+    padding: 0;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background-color: #141414; 
     color: #fff;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+
+.nav {
+    background-color: #e50914; 
+    padding: 10px 20px;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    height: 100vh;
 }
 
-/* Contact form container */
-.contact-container {
-    width: 100%;
-    max-width: 500px;
-    margin: auto;
-    background-color: #222;
-    padding: 40px;
-    border-radius: 10px;
-    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.8);
-    text-align: center;
+.nav img.logo {
+    width: 100px;
 }
 
-/* Heading styles */
-h1 {
+.nav ul {
+    display: flex;
+    gap: 20px;
+}
+
+.nav ul li {
+    display: inline;
+}
+
+.nav ul li a {
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.nav .signin {
+    background-color: #fff;
     color: #e50914;
+    padding: 8px 20px;
+    border: none;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.nav .signin:hover {
+    background-color: #ff1e1e;
+    color: #fff;
+}
+
+
+.contact-container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #181818; 
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+.contact-container h1 {
+    text-align: center;
+    color: #e50914; 
     margin-bottom: 20px;
 }
 
-p {
+.contact-container p {
+    text-align: center;
     margin-bottom: 30px;
-    font-size: 1.1rem;
-}
-
-/* Form elements styling */
-form {
-    display: flex;
-    flex-direction: column;
+    color: #ccc;
 }
 
 .form-group {
     margin-bottom: 20px;
 }
 
-label {
-    font-size: 1.2rem;
-    text-align: left;
+.form-group label {
     display: block;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
+    font-size: 14px;
+    color: #ccc;
 }
 
-input, textarea {
+.form-group input,
+.form-group textarea {
     width: 100%;
-    padding: 12px;
+    padding: 10px;
     background-color: #333;
-    color: white;
-    border: 1px solid #444;
+    color: #fff;
+    border: none;
     border-radius: 5px;
-    font-size: 1rem;
+    font-size: 16px;
+    outline: none;
 }
 
-input:focus, textarea:focus {
-    border-color: #e50914;
-    outline: none;
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+    color: #888;
 }
 
 textarea {
     resize: none;
 }
 
-button {
+.send-btn {
     width: 100%;
     padding: 12px;
-    background-color: #e50914;
-    color: white;
+    background-color: #e50914; 
     border: none;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
     border-radius: 5px;
-    font-size: 1.2rem;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s;
 }
 
-button:hover {
-    background-color: #f40612;
+.send-btn:hover {
+    background-color: #ff1e1e;
 }
 
-.faq{
-    padding: 10px 12%;
-    text-align: center;
-    font-size: 10px;
-}
-.faq h2{
-    font-weight: 500;
-    font-size: 40px;
-}
-.accordion{
-    margin:60px auto;
-    width: 100%;
-    max-width: 750px;
+
+@media (max-width: 768px) {
+    .nav ul {
+        display: none; 
+    }
     
+    .nav .signin {
+        font-size: 14px;
+        padding: 6px 15px;
+    }
 
+    .contact-container {
+        margin: 30px 10px;
+        padding: 15px;
+    }
 }
-.accordion li{
-    list-style: none;
-    width: 100%;
-    padding: 5px;
-    
-}
-.accordion li label{
-    display: flex;
-    align-items: center;
-    padding: 20px;
-    font-size: 20px;
-    font-weight: 500;
-    background: #303030;
-    margin-bottom: 2px;
-    cursor: pointer;
-    position: relative;
-}
-label::after{
-    content:'+';
-    font-size: 34px;
-    position:absolute;
-    right:20px;
-    transition:transform 0.5s;
-}
-input[type="radio"]{
-    display: none;
-}
-.accordion .content{
-    background: #303030;
-    text-align: left;
-    padding: 0 20px;
-    max-height: 0;
-    overflow:hidden;
-    transition: max-height 0.5s, padding 0.5s;
-}
-.accordion input[type="radio"]:checked +label+.content{
-    max-height: 600px;
-    padding: 30px;
-    font-size: 15px;
-}
-.accordion input[type="radio"]:checked + label::after{
-    transform: rotate(135deg);
-
-}
-.faq .email-signup{
-    max-width: 600px;
-    margin: 20px auto 60px;
-}
-.faq small{
-    font-size:13px;
-}
-
-
