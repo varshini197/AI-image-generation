@@ -7,7 +7,14 @@
 <!-- <link rel="stylesheet" href="color.css"> -->
 <link rel="stylesheet" href="header.css">
 <style>
-
+#mytext
+{
+    padding-left: 400px;
+    line-height: 30px;
+    width: 900px;
+    font-weight: 700;
+    padding-top: 30px;
+}
     body{
         background-color: black;
         color:white;
@@ -21,7 +28,8 @@
     #gallery
     {
        
-        padding: 30px;
+        padding-left: 60px;
+        padding-top: 40px;
       
     }
 </style>
@@ -29,7 +37,8 @@
 <body>
 
 <div class="nav">
-<img class="logo" src="logo.png">
+<!-- <img class="logo" src="logo.png"> -->
+<p>Quantum Canvas</p>
 <ul>
 <li><a href="index.html">Home</a></li>
 <li><a href="generate.html">Generate</a></li>
@@ -43,8 +52,14 @@
 </div>
 
 <h1 id="heading">Image Gallery</h1>
+<p id="mytext">Welcome to Your Gallery!
+    This is your personal space to showcase the unique AI-generated images you’ve created. 
+    Each artwork represents your creativity and vision, brought to life through the power of artificial intelligence.
+     We encourage you to explore your collection, reflect on your artistic journey, and share your favorite pieces with others. 
+     Whether you’ve crafted stunning landscapes, whimsical characters, or abstract designs, 
+    this gallery is a celebration of your imagination and innovation. Thank you !!</p>
 <div id="gallery"></div>
-<p></p>
+
 <script>
 // Function to display images in the gallery
 function displayImages() {
